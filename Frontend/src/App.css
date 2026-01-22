@@ -1,0 +1,208 @@
+/* ========================
+   Global Styles
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+}
+
+/* ========================
+   Layout Container
+======================== */
+.app-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================
+   Header
+======================== */
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  font-size: 32px;
+  color: #0f2027;
+}
+
+.app-header p {
+  color: #4f6d7a;
+  margin-top: 8px;
+}
+
+/* ========================
+   Message Box
+======================== */
+.message {
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.message.success {
+  background: #d1f2eb;
+  color: #0b5345;
+}
+
+.message.error {
+  background: #fdecea;
+  color: #922b21;
+}
+
+/* ========================
+   Form Section
+======================== */
+.form-section {
+  background: #f4f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  color: #0f2027;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.form-section input:focus {
+  outline: none;
+  border-color: #26a69a;
+}
+
+/* ========================
+   Buttons
+======================== */
+button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+/* Submit / Add / Update */
+button[type="submit"] {
+  background: linear-gradient(135deg, #26a69a, #00796b);
+  color: white;
+}
+
+/* Cancel */
+button[type="button"] {
+  background: #546e7a;
+  color: white;
+  margin-left: 10px;
+}
+
+/* ========================
+   Table Section
+======================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+thead {
+  background: linear-gradient(135deg, #00796b, #004d40);
+  color: white;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+}
+
+th {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+  background: #e0f2f1;
+}
+
+/* ========================
+   Action Buttons
+======================== */
+td button {
+  margin-right: 8px;
+  padding: 7px 14px;
+  font-size: 14px;
+}
+
+/* Edit */
+td button:first-child {
+  background: #ffca28;
+  color: #3e2723;
+}
+
+/* Delete */
+td button:last-child {
+  background: #e53935;
+  color: white;
+}
+
+/* ========================
+   Empty State
+======================== */
+.empty-state {
+  text-align: center;
+  padding: 30px;
+  color: #78909c;
+}
+
+/* ========================
+   Responsive Design
+======================== */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  td button {
+    margin-bottom: 6px;
+    width: 100%;
+  }
+}

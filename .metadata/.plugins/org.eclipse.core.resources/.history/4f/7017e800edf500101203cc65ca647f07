@@ -1,0 +1,20 @@
+package com.example.student.service;
+
+import com.example.student.model.Student;
+
+@Service
+public class StudentServiceImpl implements StudentService {
+
+	@Autowired
+	private StudentRepository studentRepository;
+	
+	@Override
+	public Student createStudent(Student student) {
+		return studentRepository.save(student);
+	}
+	
+	@Override
+	public Student getStudentById(Long id) {
+		return studentRepository.findById(id);
+	}
+}
